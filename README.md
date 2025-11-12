@@ -1,2 +1,3 @@
 # CSIT227_LA6_GUI
-UWU
+Pacaldo, Colyn S.
+uwu
