@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.12" fx:controller="com.example.gui_member5.FoodOrderingSystemController">
+    <padding><Insets bottom="10" left="10" right="10" top="10" /></padding>
+
+    <HBox alignment="CENTER" spacing="100">
+        <VBox alignment="CENTER" spacing="15">
+            <Label contentDisplay="CENTER" style="-fx-font-size: 20px; -fx-font-weight: bold;" text="Foods" textAlignment="CENTER" />
+            <HBox spacing="10">
+                <VBox spacing="10">
+                    <CheckBox fx:id="cPizza" text="Pizza" />
+                    <CheckBox fx:id="cBurger" text="Burger" />
+                    <CheckBox fx:id="cFries" text="Fries" />
+                    <CheckBox fx:id="cSoftDrinks" text="Soft Drinks" />
+                    <CheckBox fx:id="cTea" text="Tea" />
+                    <CheckBox fx:id="cSundae" text="Sundae" />
+                </VBox>
+                <VBox spacing="10">
+                    <Label text="Php 100" />
+                    <Label text="Php 80" />
+                    <Label text="Php 65" />
+                    <Label text="Php 55" />
+                    <Label text="Php 50" />
+                    <Label text="Php 40" />
+                </VBox>
+            </HBox>
+        </VBox>
+
+        <VBox spacing="15">
+            <Label alignment="CENTER" style="-fx-font-size: 20px; -fx-font-weight: bold;" text="Discounts" />
+            <RadioButton fx:id="rbNone" selected="true" text="None" />
+            <RadioButton fx:id="rb5" text="5% Off" />
+            <RadioButton fx:id="rb10" text="10% Off" />
+            <RadioButton fx:id="rb15" text="15% Off" />
+        </VBox>
+    </HBox>
+
+    <Button fx:id="btnOrder" onAction="#onOrderClick" prefHeight="30" prefWidth="90" text="Order" />
+</VBox>
